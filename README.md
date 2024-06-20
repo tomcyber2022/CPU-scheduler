@@ -28,27 +28,27 @@ Here’s a paraphrase of the provided input format instructions:
 
 ### Input Format Instructions
 
-1. **Line 1:** Indicates whether to produce a "trace" (step-by-step execution details) or "stats" (summary statistics) for the simulation.
+- **field 1:** Indicates whether to produce a "trace" (step-by-step execution details) or "stats" (summary statistics) for the simulation.
 
-2. **Line 2:** Lists the CPU scheduling policies to be analyzed, separated by commas. Each policy may have parameters:
+- **field 2:** Lists the CPU scheduling policies to be analyzed, separated by commas. Each policy may have parameters:
    - Each algorithm is represented by a number, as listed in the introduction.
    - For Round Robin and Aging, specify the quantum \( q \) as part of the policy, e.g., `2-4` for Round Robin with \( q=4 \) and `8-1` for Aging with \( q=1 \).
 
    **Algorithms:**
-   - FCFS (First Come First Serve)
-   - RR (Round Robin)
-   - SPN (Shortest Process Next)
-   - SRT (Shortest Remaining Time)
-   - HRRN (Highest Response Ratio Next)
-   - FB-1 (Feedback where all queues have \( q=1 \))
-   - FB-2i (Feedback where \( q=2^i \))
-   - Aging
+   1 FCFS (First Come First Serve)
+   2 RR (Round Robin)
+   3 SPN (Shortest Process Next)
+   4 SRT (Shortest Remaining Time)
+   5 HRRN (Highest Response Ratio Next)
+   6 FB-1 (Feedback where all queues have \( q=1 \))
+   7 FB-2i (Feedback where \( q=2^i \))
+   8 Aging
 
-3. **Line 3:** An integer representing the last instant for the simulation, shown on the timeline.
+- **field 3:** An integer representing the last instant for the simulation, shown on the timeline.
 
-4. **Line 4:** An integer indicating the number of processes to be simulated.
+- **field 4:** An integer indicating the number of processes to be simulated.
 
-5. **Starting from Line 5:** Each process is described on a separate line with comma-separated values:
+- **Starting from field 5:** Each process is described on a separate line with comma-separated values:
    - For algorithms 1 to 7, include:
      1. Process name (string)
      2. Arrival time
@@ -59,12 +59,16 @@ Here’s a paraphrase of the provided input format instructions:
      2. Arrival time
      3. Priority
 
-**Note:** Processes are listed by arrival time. If arrival times are the same, processes with lower priority come first.
+**Note:** 
+-Processes are listed by arrival time. If arrival times are the same, processes with lower priority come first.
+-last instant should be greater or equal to sum of execution times of all process 
+-Inputs should strictly be given according to the format 
+
 
 # Execution:
-1. Open the directory where these files are saved
-2. Run make
-3. Run Python3 frontend.py
+1. Clone the repo
+2. Compile the code using make command
+3. Run **Python3 frontend.py** in terminal
 
 
 Info:
