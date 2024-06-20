@@ -30,8 +30,7 @@ Implementing various CPU scheduling algorithms in C++ is a great way to grasp th
 - **field 1:** Indicates whether to produce a "trace" (step-by-step execution details) or "stats" (summary statistics) for the simulation.
 
 - **field 2:** Lists the CPU scheduling policies to be analyzed, separated by commas. Each policy may have parameters:
-   - Each algorithm is represented by a number, as listed in the introduction.
-   - For Round Robin and Aging, specify the quantum \( q \) as part of the policy, e.g., `2-4` for Round Robin with \( q=4 \) and `8-1` for Aging with \( q=1 \).
+   - Each algorithm is represented by a number, as listed in the introduction.For Round Robin and Aging, specify the quantum \( q \) as part of the policy, e.g., `2-4` for Round Robin with \( q=4 \) and `8-1` for Aging with \( q=1 \):
      
    1. FCFS (First Come First Serve)
    2. RR (Round Robin)
