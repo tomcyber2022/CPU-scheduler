@@ -56,9 +56,9 @@ Implementing various CPU scheduling algorithms in C++ is a great way to grasp th
      3. Priority
 
 ### Note
--1.Processes are listed by arrival time, if arrival times are the same, processes with lower priority come first.
--2.last instant should be greater or equal to sum of execution times of all process.
--3.Inputs should strictly be given according to the format.
+- 1.Processes are listed by arrival time, if arrival times are the same, processes with lower priority come first.
+- 2.last instant should be greater or equal to sum of execution times of all process.
+- 3.Inputs should strictly be given according to the format.
 
 
 # Execution:
