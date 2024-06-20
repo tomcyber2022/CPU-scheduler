@@ -24,7 +24,6 @@ Implementing various CPU scheduling algorithms in C++ is a great way to grasp th
 ### **Aging**
 - Processes have a priority that increases as they wait in the queue. This increased priority can be a function of waiting time or other criteria. Over time, even low-priority processes become high-priority, ensuring they eventually get CPU time. The scheduler uses the updated priorities to decide which process to run next.
 
-Here’s a paraphrase of the provided input format instructions:
 
 ### Input Format Instructions
 
@@ -59,10 +58,10 @@ Here’s a paraphrase of the provided input format instructions:
      2. Arrival time
      3. Priority
 
-**Note:** 
+**Note:**:
 -Processes are listed by arrival time. If arrival times are the same, processes with lower priority come first.
--last instant should be greater or equal to sum of execution times of all process 
--Inputs should strictly be given according to the format 
+-last instant should be greater or equal to sum of execution times of all process.
+-Inputs should strictly be given according to the format.
 
 
 # Execution:
@@ -70,6 +69,4 @@ Here’s a paraphrase of the provided input format instructions:
 2. Compile the code using make command
 3. Run **Python3 frontend.py** in terminal
 
-
-Info:
 
