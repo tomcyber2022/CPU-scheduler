@@ -33,9 +33,8 @@ Implementing various CPU scheduling algorithms in C++ is a great way to grasp th
    - Each algorithm is represented by a number, as listed in the introduction.
    - For Round Robin and Aging, specify the quantum \( q \) as part of the policy, e.g., `2-4` for Round Robin with \( q=4 \) and `8-1` for Aging with \( q=1 \).
 
-   **Algorithms:**
-   - FCFS (First Come First Serve)
-   - RR (Round Robin)
+   1. FCFS (First Come First Serve)
+   2. RR (Round Robin)
    3 SPN (Shortest Process Next)
    4 SRT (Shortest Remaining Time)
    5 HRRN (Highest Response Ratio Next)
