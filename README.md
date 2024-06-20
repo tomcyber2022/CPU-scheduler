@@ -34,8 +34,8 @@ Implementing various CPU scheduling algorithms in C++ is a great way to grasp th
    - For Round Robin and Aging, specify the quantum \( q \) as part of the policy, e.g., `2-4` for Round Robin with \( q=4 \) and `8-1` for Aging with \( q=1 \).
 
    **Algorithms:**
-   1 FCFS (First Come First Serve)
-   2 RR (Round Robin)
+   - FCFS (First Come First Serve)
+   - RR (Round Robin)
    3 SPN (Shortest Process Next)
    4 SRT (Shortest Remaining Time)
    5 HRRN (Highest Response Ratio Next)
@@ -66,7 +66,7 @@ Implementing various CPU scheduling algorithms in C++ is a great way to grasp th
 
 # Execution:
 1. Clone the repo
-2. Compile the code using make command
-3. Run **Python3 frontend.py** in terminal
+2. Compile the code using `make` command
+3. Run `Python3 frontend.py` in terminal
 
 
